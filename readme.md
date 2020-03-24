@@ -28,7 +28,9 @@ If you are one of the people who is still on vacation,  learn the importance of 
 
  button. This is done so that you are aware of the importance of social distancing and are convinced to stop their vacation to actually do social distancing back home, just like the people who were on vacation in the game after being convinced through a “warning shot” by the player.
 ### Main Menu
+The main menu displays the game logo, story, the social distancing warning for players who are still on vacation, “Click Me for Social Distancing Info” button to link to Alodokter's Website (explained more below), How To Play, Start Game button to start the game, and Exit Game button to exit the game.
 ![Main Menu](images_demonstration/Main_Menu.jpg)
+Above is the picture for the Main Menu of Coronavirus Social Distancing Game
 ### Alodokter's Website
 Alodokter's website on the importance of social distancing, which is:
 > [https://www.alodokter.com/pentingnya-menerapkan-social-distancing-demi-mencegah-covid-19](https://www.alodokter.com/pentingnya-menerapkan-social-distancing-demi-mencegah-covid-19)
@@ -38,10 +40,11 @@ will be shown when the player presses the “Click Me for Social Distancing Info
 ### Game Screen
 Game Screen is shown after you press the "Start Game" button
 ![Game Screen](images_demonstration/Game_Screen.jpg)
+A picture of the Game Screen. “People” going on a vacation in groups of 15 from the top of the screen and one lone blue bullet which has made 1 of those “People” go social distancing back home on the right of the screen. Another group of leftover 6 people almost reached the player’s position on the bottom of the screen.
 ### Game Over
-Game Over is shown when one of the people who were on vacation goes to your position at the bottom of your screen)
+Game Over is shown on the Game Screen when one of the people who were on vacation goes to your position at the bottom of your screen)
 ![Game Over](images_demonstration/Game_Over.jpg)
-
+Above is a picture of the Game Screen. “People” going on a vacation in groups of 15 from the top of the screen, a lone bullet which has convinced some of the people in the 2nd group in the middle, and people from the 1st group successfully gets near the player’s position at the bottom of the screen, resulting in a Game Over.
 
 
 
