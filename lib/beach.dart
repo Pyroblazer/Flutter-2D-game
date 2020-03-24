@@ -3,18 +3,18 @@ import 'dart:ui';
 import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
-import 'package:galaxygame/bullet.dart';
-import 'package:galaxygame/dragon.dart';
-import 'package:galaxygame/main.dart';
+import 'package:coronavirus_social_distancing_game/bullet.dart';
+import 'package:coronavirus_social_distancing_game/people.dart';
+import 'package:coronavirus_social_distancing_game/main.dart';
 
-class Galaxy extends BaseGame {
+class Beach extends BaseGame {
   bool checkOnce = true;
 
-  List<Dragon> dragonList = <Dragon>[];
+  List<People> peopleList = <People>[];
   List<Bullet> bulletList = <Bullet>[];
-  Size dimenstions;
+  Size dimensions;
 
-  Galaxy(this.dimenstions);
+  Beach(this.dimensions);
 
   @override
   void render(Canvas canvas) {
@@ -28,8 +28,7 @@ class Galaxy extends BaseGame {
         .text(over, color: Colors.white, fontSize: 48.0, fontFamily: 'Halo');
     gameOver
         ? overGame.paint(canvas, Offset(size.width / 5, size.height / 2))
-        : p.paint(canvas,
-            new Offset(size.width - p.width - 10, size.height - p.height - 10));
+        : p.paint(canvas, new Offset(size.width - p.width - 10, size.height - p.height - 10));
   }
 
   double creationTimer = 0.0;
@@ -39,11 +38,11 @@ class Galaxy extends BaseGame {
     if (creationTimer >= 4) {
       creationTimer = 0.0;
 
-      for (int i = 1; i <= DRAGON_SIZE / 7; i++) {
+      for (int i = 1; i <= PEOPLE_SIZE / 7; i++) {
         for (int j = 0; j < i; ++j) {
-          dragon = new Dragon(dimenstions, i, j);
-          dragonList.add(dragon);
-          add(dragon);
+          people = new People(dimensions, i, j);
+          peopleList.add(people);
+          add(people);
         }
       }
     }
@@ -55,7 +54,7 @@ class Galaxy extends BaseGame {
     touchPositionDy = position.dy;
     bulletStartStop = true;
     bulletList.add(bullet);
-    bullet = new Bullet(dragonList, bulletList);
+    bullet = new Bullet(peopleList, bulletList);
     add(bullet);
   }
 

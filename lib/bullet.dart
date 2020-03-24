@@ -1,33 +1,33 @@
 import 'dart:ui';
 
 import 'package:flame/components/component.dart';
-import 'package:galaxygame/dragon.dart';
-import 'package:galaxygame/explosion.dart';
-import 'package:galaxygame/main.dart';
+import 'package:coronavirus_social_distancing_game/people.dart';
+import 'package:coronavirus_social_distancing_game/collisionSpark.dart';
+import 'package:coronavirus_social_distancing_game/main.dart';
 
 class Bullet extends SpriteComponent {
   bool explode = false;
   double maxY;
-  List<Dragon> dragonList = <Dragon>[];
+  List<People> peopleList = <People>[];
   List<Bullet> bulletList = <Bullet>[];
-  Bullet(this.dragonList, this.bulletList)
-      : super.square(BULLET_SIZE, 'gun.png');
+  Bullet(this.peopleList, this.bulletList)
+      : super.square(BULLET_SIZE, 'bullet.png');
 
   @override
   void update(double t) {
     y -= gameOver ? 0 : t * BULLETSPEED;
 
-    if (dragonList.isNotEmpty)
-      dragonList.forEach((dragon) {
-        bool remove = this.toRect().contains(dragon.toRect().bottomCenter) ||
-            this.toRect().contains(dragon.toRect().bottomLeft) ||
-            this.toRect().contains(dragon.toRect().bottomRight);
+    if (peopleList.isNotEmpty)
+      peopleList.forEach((people) {
+        bool remove = this.toRect().contains(people.toRect().bottomCenter) ||
+            this.toRect().contains(people.toRect().bottomLeft) ||
+            this.toRect().contains(people.toRect().bottomRight);
         if (remove) {
           points += 1;
-          dragon.explode = true;
+          people.socialDistancingBackHome = true;
           bullet.explode = true;
-          dragonList.remove(dragon);
-          game.add(new Explosion(dragon));
+          peopleList.remove(people);
+          game.add(new collisionSpark(people));
         }
       });
   }
