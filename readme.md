@@ -1,6 +1,11 @@
 ﻿# Coronavirus Social Distancing Game
 By Ignatius Timothy Manullang / 13517044
-Done to fulfill task requirements of IF3280 Socio-Informatics and Professionalism
+
+Done to fulfill task requirements of IF3280 Socio-Informatics and Professionalism 
+
+Informatics Engineering, Bandung Institute of Technology (ITB)
+
+2020
 
 ## Running instructions
 Install flutter, make sure that it's also integrated to environment variables 
