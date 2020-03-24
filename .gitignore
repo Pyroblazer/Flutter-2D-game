@@ -26,7 +26,22 @@
 .packages
 .pub-cache/
 .pub/
-build/
+build/audio_service
+build/audioplayers
+build/intermediates
+build/path_provider
+build/url_launcher
+build/url_launcher_macos
+build/url_launcher_web
+build/last_build_run.json
+build/app/generated
+build/app/intermediates
+build/app/reports
+build/app/tmp
+build/app/outputs/logs
+build/app/outputs/mapping
+build/app/outputs/apk/debug
+build/app/outputs/apk/release
 
 # Android related
 **/android/**/gradle-wrapper.jar
@@ -69,4 +84,3 @@ build/
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
-!build/app/outputs/apk
