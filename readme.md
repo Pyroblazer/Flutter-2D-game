@@ -6,13 +6,19 @@ Done to fulfill task requirements of IF3280 Socio-Informatics and Professionalis
 Install flutter, make sure that it's also integrated to environment variables 
 Connect a device that is compatible with Flutter 
 Open terminal, and type in:
+
   `flutter run`
-  Or, if you want to use a pre-compiled apk (Android only), just install the apk from
+  
+  Or, if you want to use a pre-compiled apk (Android only), just download the apk from
 
 >   build/app/outputs/apk/app.apk
 
-  Make sure you check with the sha1 code that is available, which is
+After downloading the apk, make sure you also check with the sha1 code that is available, just to make sure that the apk you downloaded isn't badly modified in any way when you were downloading it, which is
 >  build/app/outputs/apk/app.apk.sha1
+
+After making sure the apk you downloaded isn't badly modified in any way when you were downloading it, copy the apk file into your phone, install it, then just run the app that is installed on your phone.
+
+Happy Playing!
 
 ## App Demonstration
 ### Story
