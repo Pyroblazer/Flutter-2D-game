@@ -37,10 +37,10 @@ will be shown when the player presses the “Click Me for Social Distancing Info
 ![Alodokter Website on The Importance of Social Distancing](images_demonstration/Alodokter_Website.jpg)
 ### Game Screen
 Game Screen is shown after you press the "Start Game" button
-![Game Screen](images_demonstration/Game_Screen.png)
+![Game Screen](images_demonstration/Game_Screen.jpg)
 ### Game Over
 Game Over is shown when one of the people who were on vacation goes to your position at the bottom of your screen)
-![Game Over](images_demonstration/Game_Over.png)
+![Game Over](images_demonstration/Game_Over.jpg)
 
 
 
