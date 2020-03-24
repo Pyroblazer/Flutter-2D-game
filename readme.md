@@ -8,7 +8,8 @@ Informatics Engineering, Bandung Institute of Technology (ITB)
 2020
 
 ## Running instructions
-Install flutter, make sure that it's also integrated to environment variables 
+Install flutter, make sure that it's also integrated to environment variables.
+
 Connect a device that is compatible with Flutter 
 Open terminal, and type in:
 
